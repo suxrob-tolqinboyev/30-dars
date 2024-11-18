@@ -1,0 +1,43 @@
+.hero-container {
+  width: 1280px;
+  min-width: 375px;
+  margin: auto;
+}
+
+.container {
+  width: 1120px;
+  min-width: 375px;
+  margin:0 auto;
+ 
+}
+
+@include tablet(){
+  .container {
+    width: 944px;
+    padding: 0 40px;
+  }
+
+  .hero-container{
+    width: 945px;
+    max-width: 1000px;
+  }
+}
+
+@include mobile(){
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    overflow:hidden;
+    max-width: 571px;
+  }
+
+  .hero-container{
+    width: 100%;
+    padding: 0 32px;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 571px;
+  }
+}
+
+
